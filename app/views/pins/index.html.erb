@@ -1,6 +1,8 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p> -->
+<div class="panel panel-default">
+<div class="panel-heading"><h1>Pins</h1></div>
+<div class-"panel-body">
 
-<h1>Pins</h1>
 
 <table>
   <thead>
@@ -15,7 +17,9 @@
       <tr>
         <td><%= pin.description %></td>
         <td><%= link_to 'Show', pin %></td>
+        <td><%= '/' %></td>
         <td><%= link_to 'Edit', edit_pin_path(pin) %></td>
+        <td><%= '/' %></td>
         <td><%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
@@ -24,4 +28,7 @@
 
 <br>
 
-<%= link_to 'New Pin', new_pin_path %>
+
+</div>
+<div class="panel-footer"><%= link_to 'New Pin', new_pin_path %></div>
+</div>
