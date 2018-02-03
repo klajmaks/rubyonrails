@@ -1,5 +1,5 @@
 <div class="panel panel-default">
-<div class="panel-heading"><h2>Change your password</h2></div>
+<div class="panel-heading"><h2>Zmień hasło</h2></div>
 <div class-"panel-body">
 
 
@@ -8,7 +8,7 @@
   <%= f.hidden_field :reset_password_token, class: "form_control" %>
 
   <div class="form_group">
-    <%= f.label :password, "New password" %><br />
+    <%= f.label :password, "Nowe hasło" %><br />
     <% if @minimum_password_length %>
       <em>(<%= @minimum_password_length %> characters minimum)</em><br />
     <% end %>
@@ -16,12 +16,12 @@
   </div>
 
   <div class="form_group">
-    <%= f.label :password_confirmation, "Confirm new password" %><br />
+    <%= f.label :password_confirmation, "Potwierdź nowe hasło" %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off", class: "form_control" %>
   </div>
 
   <div class="actions">
-    <%= f.submit "Change my password", class: "btn btn-primary" %>
+    <%= f.submit "Zmień hasło", class: "btn btn-primary" %>
   </div>
 <% end %>
 

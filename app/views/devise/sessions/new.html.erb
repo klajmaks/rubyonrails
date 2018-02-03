@@ -1,5 +1,5 @@
 <div class="panel panel-default">
-<div class="panel-heading"><h2>Log in</h2></div>
+<div class="panel-heading"><h2>Logowanie</h2></div>
 <div class-"panel-body">
 
 
@@ -10,19 +10,19 @@
   </div>
 
   <div class="form_group">
-    <%= f.label :password %><br />
+    <%= f.label :password, "Hasło" %><br />
     <%= f.password_field :password, autocomplete: "off", class: "form_control" %>
   </div>
 
   <% if devise_mapping.rememberable? -%>
     <div class="form_group">
       <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+      <%= f.label :remember_me, "Zapamiętaj mnie" %>
     </div>
   <% end -%>
 
   <div class="actions">
-    <%= f.submit "Log In", class: 'btn btn-primary' %>
+    <%= f.submit "Zaloguj się", class: 'btn btn-primary' %>
   </div>
 <% end %>
 

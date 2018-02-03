@@ -1,5 +1,5 @@
 <div class="panel panel-default">
-<div class="panel-heading"><h2>Sign up</h2></div>
+<div class="panel-heading"><h2>Rejestracja</h2></div>
 <div class-"panel-body">
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -11,9 +11,9 @@
   </div>
 
   <div class="form_group">
-    <%= f.label :password %>
+    <%= f.label :password, "Hasło" %>
     <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <em>(Minimum <%= @minimum_password_length %> znaków)</em>
     <% end %><br />
     <%= f.password_field :password, autocomplete: "off", class: "form_control" %>
     <p></p>
@@ -21,7 +21,7 @@
 
 
   <div class="actions">
-    <%= f.submit "Sign In", class: 'btn btn-primary'  %>
+    <%= f.submit "Zarejestruj się", class: 'btn btn-primary'  %>
   </div>
 <% end %>
 

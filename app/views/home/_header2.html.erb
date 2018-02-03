@@ -3,18 +3,18 @@
   <a><%=link_to "OBRAZKOWO", root_path, class:'navbar-brand'%></a>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="nav navbar-nav">
-      <li><%=link_to "Home Page", root_path%></li>
-      <li><%=link_to "About Me", home_about_path%></li>
-      <li><%=link_to "Pins", pins_path%></li>
+      <li><%=link_to "Strona Główna", root_path%></li>
+      <li><%=link_to "O mnie", home_about_path%></li>
+      <li><%=link_to "Lista pinów", pins_path%></li>
     </ul>
       <ul class="nav navbar-nav navbar-right">
       <% if user_signed_in? %>
-      <li><%= link_to 'Edit Profile', edit_user_registration_path %></li>
-      <li><%=link_to 'New Pin', new_pin_path%></li>
-      <li><%= link_to 'Log out', destroy_user_session_path, method: :delete %></li>
+      <li><%= link_to 'Edytuj profil', edit_user_registration_path %></li>
+      <li><%=link_to 'Nowy pin', new_pin_path%></li>
+      <li><%= link_to 'Wyloguj', destroy_user_session_path, method: :delete %></li>
       <% else %>
-      <li><%= link_to 'Log in', new_user_session_path %></li>
-      <li><%= link_to 'Sign up', new_user_registration_path %></li>
+      <li><%= link_to 'Logowanie', new_user_session_path %></li>
+      <li><%= link_to 'Rejestracja', new_user_registration_path %></li>
       <% end %>
     </ul>
   </div>
