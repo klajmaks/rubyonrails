@@ -18,6 +18,8 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'devise', '~> 4.3'
 gem 'bcrypt', platforms: :ruby
 gem 'paperclip', '~> 5.2', '>= 5.2.1'
+gem 'jquery-turbolinks'
+gem 'masonry-rails', '~> 0.2.4'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
