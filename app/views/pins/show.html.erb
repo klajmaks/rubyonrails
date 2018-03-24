@@ -6,6 +6,7 @@
     <%= image_tag @pin.image.url(:medium) %></div>
 <div class-"panel-body">
   <%= @pin.description %><br/>
+  <br/><%= @pin.user.name %><br/>
   <% if @pin.user == current_user %>
 <%= link_to 'Edytuj', edit_pin_path(@pin) %><br/>
 <%end%>
