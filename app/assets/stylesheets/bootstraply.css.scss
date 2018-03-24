@@ -4,3 +4,43 @@ $body-bg: #80dfff;
 $navbar-default-link-color: black;
 @import "bootstrap-sprockets";
 @import "bootstrap";
+.navbar-default .navbar-toggle {
+  border: none; /* Removes border color */
+  //float: left; /* Move navbar toggle to left */
+  background: #1ac6ff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+   /* Removes border color */
+  //float: left; /* Move navbar toggle to left */
+  background-color: #ff4d4d;
+}
+.navbar-default .navbar-toggle:hover {
+  border: none; /* Removes border color */
+  //float: left; /* Move navbar toggle to left */
+  background: none;
+}
+.navbar-default .navbar-toggle:hover .icon-bar {
+   /* Removes border color */
+  //float: left; /* Move navbar toggle to left */
+  background-color: #ff4d4d;
+}
+// .navbar-default .navbar-toggle .icon-bar {
+//   background-color: #ff4d4d /* Changes regular toggle color */
+// }
+// .navbar-default .navbar-toggle .icon-bar:hover {
+//   background-color: #ff4d4d; /* Changes toggle color on hover */
+// }
+.center {
+  text-align: center;
+}
+
+.panel-primary {
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+
+.panel-primary .panel-footer {
+  border: none;
+  background: none;
+}
