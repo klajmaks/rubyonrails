@@ -13,12 +13,17 @@ $navbar-height: 40px;
 .navbar-default .navbar-toggle {
   border: none; /* Removes border color */
   //float: left; /* Move navbar toggle to left */
-  background: #1ac6ff;
+  background: #cb2027;
+}
+.navbar-default .navbar-toggle:enabled {
+  border: none; /* Removes border color */
+  //float: left; /* Move navbar toggle to left */
+  background: #cb2027;
 }
 .navbar-default .navbar-toggle .icon-bar {
    /* Removes border color */
   //float: left; /* Move navbar toggle to left */
-  background-color: #ff4d4d;
+  background-color: #ffffff
 }
 .navbar-default .navbar-toggle:hover {
   border: none; /* Removes border color */
@@ -28,7 +33,7 @@ $navbar-height: 40px;
 .navbar-default .navbar-toggle:hover .icon-bar {
    /* Removes border color */
   //float: left; /* Move navbar toggle to left */
-  background-color: #ff4d4d;
+  background-color: #cb2027;
 }
 // .navbar-default .navbar-toggle .icon-bar {
 //   background-color: #ff4d4d /* Changes regular toggle color */
