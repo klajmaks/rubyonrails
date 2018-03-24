@@ -1,6 +1,14 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-static-top">
   <div class="container">
-  <a><%=link_to "EVENTLAND", root_path, class:'navbar-brand'%></a>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a><%=link_to "EVENTLAND", root_path, class:'navbar-brand'%></a>
+    </div>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="nav navbar-nav">
       <li><%=link_to "Strona Główna", root_path%></li>
