@@ -48,6 +48,15 @@ $alert-link-font-weight: bold;
   text-align: center;
 }
 
+textarea.form-control
+{
+  height: 200px;
+  resize: none;
+}
+.panel-body{
+  overflow-wrap: break-word;
+}
+
 .panel-primary {
   border: none;
   box-shadow: none;
