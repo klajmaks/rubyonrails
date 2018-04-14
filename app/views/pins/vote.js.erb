@@ -1,0 +1,6 @@
+<% if current_user liked? @pin %>
+$('.like-btn').addClass('liked');
+<% else %>
+$('.like-btn').removeClass('liked');
+<%end%>
+$('.likes-count').html("<%=@pin.get_upvotes.size%>")

@@ -1,7 +1,8 @@
 class PinsController < ApplicationController
-  before_action :set_pin, only: [:show, :edit, :update, :destroy]
+  before_action :set_pin, only: [:show, :edit, :update, :destroy, :vote]
   before_action :authenticate_user!, except: [:index, :show]
   before_action :correct_user, only: [:edit, :update, :destroy]
+  respond_to :js, :json, :html
   # GET /pins
   # GET /pins.json
   def index
@@ -21,6 +22,7 @@ class PinsController < ApplicationController
   # GET /pins/1/edit
   def edit
   end
+
 
   # POST /pins
   # POST /pins.json
@@ -60,6 +62,20 @@ class PinsController < ApplicationController
       format.html { redirect_to pins_url, notice: 'Pin usunięty pomyślnie.' }
       format.json { head :no_content }
     end
+  end
+
+  def vote
+    respond_to do |format|
+    if !current_user.liked? @pin
+      @pin.liked_by current_user
+      format.html { redirect_to @pin }
+      format.js {render inline: "location.reload();" }
+    elsif current_user.liked? @pin
+      @pin.unliked_by current_user
+      format.html { redirect_to @pin}
+      format.js {render inline: "location.reload();" }
+    end
+  end
   end
 
   private

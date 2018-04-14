@@ -8,6 +8,8 @@
         <%= link_to image_tag(pin.image.url(:medium)), pin %><br/>
         <strong><font size='4'><%= pin.title %></font></strong><br/>
         <br/>Dodane przez: <strong><%= pin.user.name if pin.user %></strong><br/>
+        <span class="likes-count">Weźmie udział: <%=pin.get_upvotes.size%> </span><br/>
+
       </div>
         <% if pin.user == current_user %>
         <div class="panel-footer">

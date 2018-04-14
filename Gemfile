@@ -22,6 +22,7 @@ gem 'jquery-turbolinks'
 gem 'masonry-rails', '~> 0.2.4'
 gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
+gem 'acts_as_votable', '~> 0.11.1'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
