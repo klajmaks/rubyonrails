@@ -10,12 +10,17 @@
   <br/></br>
   Dodane przez: <strong><%= @pin.user.name %></strong><br/>
     <span class="likes-count">Weźmie udział: <%=@pin.get_upvotes.size%> </span><br/></br>
+  <%if user_signed_in?%>
   <%= link_to like_pin_path(@pin), class:"like-btn", method: :put, remote: true do %>
   <%if !current_user.liked? @pin%>
     <span><p>Będę tam! :)</p></span>
     <%else%>
     <span><p>Nie mogę przyjść :(</p></span>
   <%end%>
+  <%end%>
+  <%else%>
+  Chcesz wziąć udział?
+  <%= link_to 'Zaloguj się!', new_user_session_path %></br></br>
   <%end%>
   <% if @pin.user == current_user %>
 <%= link_to 'Edytuj', edit_pin_path(@pin) %><br/>
