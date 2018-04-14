@@ -8,6 +8,9 @@ $brand-primary: #cb2027;
 $pagination-active-bg: #cb2027;
 $pagination-active-border: #cb2027;
 $navbar-height: 40px;
+$alert-danger-text: #cb2027;
+$alert-danger-border: #cb2027;
+$alert-link-font-weight: bold;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 .navbar-default .navbar-toggle {
