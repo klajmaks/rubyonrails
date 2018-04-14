@@ -5,10 +5,12 @@
   <div class="panel-heading center">
     <%= image_tag @pin.image.url(:medium) %></div>
 <div class-"panel-body">
+  <strong><font size='7'><%= @pin.title %></font></strong><br/><br/>
   <%= @pin.description %><br/>
   <br/>Dodane przez: <strong><%= @pin.user.name %></strong><br/>
   <% if @pin.user == current_user %>
 <%= link_to 'Edytuj', edit_pin_path(@pin) %><br/>
+<%= link_to 'Usuń', @pin, method: :delete, data: { confirm: 'Jesteś pewny?' } %><br/>
 <%end%>
 <%= link_to 'Wstecz', pins_path %>
 </div>
