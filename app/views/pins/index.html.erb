@@ -9,6 +9,7 @@
         <strong><font size='4'><%= pin.title %></font></strong><br/>
         <br/>Dodane przez: <strong><%= pin.user.name if pin.user %></strong><br/>
         <span class="likes-count">Weźmie udział: <%=pin.get_upvotes.size%> </span><br/>
+        Data dodania: <%= pin.created_at %></br>
 
       </div>
         <% if pin.user == current_user %>
