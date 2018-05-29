@@ -31,7 +31,7 @@ class PinsController < ApplicationController
 
     respond_to do |format|
       if @pin.save
-        format.html { redirect_to @pin, notice: 'Pin utworzony pomyślnie.' }
+        format.html { redirect_to @pin, notice: 'Wydarzenie utworzone pomyślnie.' }
         format.json { render :show, status: :created, location: @pin }
       else
         format.html { render :new }
@@ -45,7 +45,7 @@ class PinsController < ApplicationController
   def update
     respond_to do |format|
       if @pin.update(pin_params)
-        format.html { redirect_to @pin, notice: 'Pin zaktualizowany pomyślnie.' }
+        format.html { redirect_to @pin, notice: 'Wydarzenie zaktualizowane pomyślnie.' }
         format.json { render :show, status: :ok, location: @pin }
       else
         format.html { render :edit }
@@ -59,7 +59,7 @@ class PinsController < ApplicationController
   def destroy
     @pin.destroy
     respond_to do |format|
-      format.html { redirect_to pins_url, notice: 'Pin usunięty pomyślnie.' }
+      format.html { redirect_to pins_url, notice: 'Wydarzenie usunięte pomyślnie.' }
       format.json { head :no_content }
     end
   end
@@ -90,6 +90,6 @@ class PinsController < ApplicationController
     end
     def correct_user
       @pin = current_user.pins.find_by(id: params[:id])
-      redirect_to pins_path, notice: "Nie jesteś uprawniony do edycji tego pinu" if @pin.nil?
+      redirect_to pins_path, notice: "Nie jesteś uprawniony do edycji tego wydarzenia" if @pin.nil?
     end
 end

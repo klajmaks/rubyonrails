@@ -21,7 +21,7 @@
   <% end %>
 
   <div class="from_group">
-    <%= f.label :password %> <i>(pozostaw puste, jeśli nie chcesz zmieniać)</i><br />
+    <%= f.label :password, "Hasło" %> <i>(pozostaw puste, jeśli nie chcesz zmieniać)</i><br />
     <%= f.password_field :password, autocomplete: "off", class: "form_control" %>
     <% if @minimum_password_length %>
       <br />
