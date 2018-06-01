@@ -24,7 +24,7 @@
   <%end%>
   <% if @pin.user == current_user %>
 <%= link_to 'Edytuj', edit_pin_path(@pin) %><br/>
-<%= link_to 'Usuń', @pin, method: :delete, data: { confirm: 'Jesteś pewny?' } %><br/>
+<%= link_to 'Usuń', @pin, method: :delete, data: { confirm: 'Czy na pewno chcesz usunąć to wydarzenie?' } %><br/>
 <%end%>
 <%= link_to 'Wstecz', pins_path %>
 </div>
