@@ -58,8 +58,8 @@ config.action_mailer.smtp_settings = {
       port: 587,
       authentication: "plain",
       enable_starttls_auto: true,
-      user_name: "klajmaks@gmail.com",
-      password: "klajmaks94"
+      user_name: "eventlandmailer@gmail.com",
+      password: "eventland1!"
     }
   Paperclip.options[:command_path] = 'C:\Program Files\ImageMagick-7.0.7-Q16'
 end
