@@ -98,5 +98,4 @@ config.action_mailer.smtp_settings = {
       user_name: "eventlandmailer@gmail.com",
       password: "eventland1!"
     }
-}
 end
