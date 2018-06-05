@@ -97,6 +97,6 @@ config.action_mailer.smtp_settings = {
       enable_starttls_auto: true,
       user_name: "eventlandmailer@gmail.com",
       password: "eventland1!"
-    )
+    }
 }
 end
